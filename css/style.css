@@ -5,12 +5,10 @@
     --color-complementario: #F07238;
 }
 
-
-
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-   
+    font-size: 62.5%;
 }
 
 body {
@@ -24,36 +22,36 @@ body {
     width: 95%;
 }
 
-
 p {
     /* color: rgba(57, 58, 57, 0.781); */
     color: rgba(37, 37, 37, 0.781);
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 
 img {
     max-width: 100%;
 }
 
-/**Video**/
-
-
-
-/**titulos**/
-
-
-
 .bienvenida h3 {
     font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.instrucciones h4 {
+    font-size: 2rem;
+}
+
+.instrucciones p {
+    font-size: 2.5rem;
 }
 
 .instrucciones ul li {
     color: rgba(33, 36, 32, 0.829);
     list-style-type: none;
-    line-height: 1.5rem;
+    line-height: 2remrem;
+    font-size: 2rem;
 }
-
 
 label {
     color: rgba(54, 56, 54, 0.63);
@@ -66,7 +64,6 @@ input {
     width: 300px;
 }
 
-
 #botonArriba {
     position: fixed;
     bottom: 80px;
@@ -76,7 +73,7 @@ input {
 }
 
 span {
-color: var(--color-complementario);
+    color: var(--color-complementario);
 }
 
 .power-word {
@@ -113,6 +110,10 @@ details summary span {
     color: var(--color-secundario);
 }
 
+details summary {
+    font-size: 1.7rem;
+}
+
 details {
     cursor: pointer;
     color: var(--color-secundario);
@@ -136,16 +137,18 @@ details[open] summary~* {
         margin-left: 0px
     }
 }
-#formulario legend h2{
+
+#formulario legend h2 {
     color: var(--color-primario);
 }
+
 #formulario .pregunta {
     color: var(--color-primario);
 }
+
 #formulario details p {
     line-height: 2rem;
-    font-size: 1rem;
-    
+    font-size: 1.6rem;
 }
 
 .contenido-footer {
@@ -167,16 +170,15 @@ details[open] summary~* {
 
 .mensaje-carga {
     color: rgb(102, 192, 12);
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     line-height: 1.8rem;
     padding: 10px;
     text-align: center;
-    
 }
 
 button {
     /* background-color: rgb(96, 153, 38); */
-    background-color:var(--color-complementario);
+    background-color: var(--color-complementario);
     border-style: none;
     padding: 10px;
     border-radius: 5px;
@@ -206,10 +208,12 @@ main {
 .desaparece-spiner {
     display: none;
 }
-.cargando{
+
+.cargando {
     text-align: center;
     /* margin-top: 230px; */
 }
+
 .loader {
     display: inline-block;
     width: 90px;
@@ -263,10 +267,17 @@ main {
         height: 0%;
     }
 }
-.separacion-spiner{
+
+.separacion-spiner {
     display: none;
 }
+
 /** FIN btn muestra loader**/
+
+.videos-explicaion {
+    width: 340px;
+}
+/* paginas */
 
 @media (min-width: 768px) {
     .barra-navegacion {
@@ -280,8 +291,20 @@ main {
     .enlaces a {
         margin-left: 20px;
     }
-    p {
-        line-height: 3rem;
-        font-size: 1rem;
+    #formulario details p {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    #formulario details ul li {
+        font-size: 1.6rem;
+    }
+    .videos-explicaion {
+        width: 700px;
+    }
+    .video-container {
+        display: flex;
+    }
+    .videos-explicaion {
+        margin: 0 auto;
     }
 }
